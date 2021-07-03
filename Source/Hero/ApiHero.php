@@ -9,14 +9,12 @@ class ApiHero {
     
     private $query = array(
         // "name" => 'iron man', // ""
-        "limit" => "30",
+        "limit" => "20",
         'apikey' => APIKEY_PUBLIC,
         'ts' => TIMESTAMP,
         'hash' => MD5_HASH,
     );
     
-    // https://github.com/jesushilarioh/marvel/blob/master/connections/character.php
-
     public function getListHero() 
     {
         try {
