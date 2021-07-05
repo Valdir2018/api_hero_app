@@ -14,7 +14,7 @@ Na classe Curl.php, o método estático foi definido para iniciar a blibioteca C
 
 Necessário ter instalado o composer: https://getcomposer.org/Composer-Setup.exe
 
-Na raiz do projeto executar o comando: composer update p/ instalar as configurações definidas no composer.json
+Na raiz do projeto executar no prompt de comando CMD : composer update p/ instalar as configurações definidas no composer.json
 
 3. CONFIGURAÇÃO API MARVEL
 
