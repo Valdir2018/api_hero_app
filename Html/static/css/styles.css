@@ -59,6 +59,15 @@ li > a:hover {
   border-bottom: 2px solid red;
 }
 
+.flexrow-page-stories {
+  background: url("../image/52bdf830aa094a.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
 .flex-top-banner {
   display: flex;
   flex-direction: column;
@@ -94,32 +103,114 @@ li > a:hover {
   position: relative;
 }
 .content > .content-image {
+  justify-content: center;
   display: inline;
-  margin: 0.75rem 0.3rem;
+  margin: 0.75rem 0.75rem;
   top: 3rem;
   flex-direction: row;
-  width: 285px;
 }
 
 .content-image > img {
   display: flex;
-  width: 100%;
-  height: 324px;
+  width: 224px;
+  height: 336px;
   margin: 0.5rem 0rem;
   border: 1px solid #e6dada;
+  /* border-radius: 0.75rem; */
   box-shadow: 4px 10px 16px 0px rgb(0 0 0 / 30%);
 }
 
 .content-image > .content-title {
-  display: block;
-  padding: 2rem 0;
+  display: flex;
+  padding: 1.75rem 0;
   text-align: center;
   color: #635f5f;
   font-weight: 800;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 1px;
-
   text-transform: uppercase;
+
+  justify-content: center;
+  /* position: absolute; */
+}
+
+.content-image > button {
+  width: 120px;
+  display: block;
+  padding: 10px 16px;
+  border: 1px solid #c7c1c1;
+  border-radius: 1.7rem;
+  align-items: center;
+
+  margin: 0px auto;
+  background: #ec1d24;
+}
+
+.content-image > button > a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content-stories {
+  display: flex;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.spinner > img {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 63px;
+}
+
+.spinner-disable > img {
+  display: none;
+}
+
+.content-stories > h1 {
+  display: flex;
+  position: absolute;
+  top: -3rem;
+}
+
+h1 > button {
+  display: inline-block;
+  margin-left: 15rem;
+  background: red;
+  border: 0;
+  padding: 10px 34px;
+  color: #fff;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.content-stories > img {
+  display: flex;
+  width: 340px;
+  height: 450px;
+  border: 1px solid #c7c1c1;
+  margin-top: 25px;
+}
+
+#totalStories {
+  display: inline-grid;
+  position: relative;
+
+  padding: 1rem 4rem;
+}
+.content-stories > .storie {
+  display: inline;
+  padding: 2rem 3rem;
+}
+.storie {
+  padding: 1rem 0.75rem;
+  border: 1px solid #c7c1c1;
+  margin: 1.5rem;
+
+  border-radius: 0.75rem;
 }
 
 .content-footer {
