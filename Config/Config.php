@@ -7,7 +7,8 @@ const URL_STORIES  = 'https://gateway.marvel.com:443/v1/public/characters/';
 
 
 const TIMESTAMP = '30062021';
-const APIKEY_PUBLIC = '471a0b73c126b146f7973d485f443d73';
-const APIKEY_PRIVATE = 'f87dd508f26960c83dfb2c893a90f900ba2c4ab2';
 
-const MD5_HASH = '85120cd49c3034b5a81c4c8f8e390099';
+const APIKEY_PUBLIC = '< chave publica >';
+const APIKEY_PRIVATE = '<chave privada >';
+
+const MD5_HASH = '< timestamp + ch. publ + ch. privada hash >';

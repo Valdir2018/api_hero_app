@@ -12,7 +12,7 @@ class MarvelCharacters {
         "limit" => "80",
         'apikey' => APIKEY_PUBLIC,
         'ts' => TIMESTAMP,
-        'hash' => MD5_HASH,
+        'hash' => MD5_HASH
         // 'size' => 'portrait_incredible.jpg',
     );
 
@@ -37,7 +37,6 @@ class MarvelCharacters {
     {
        
       
-        // 12211/characters
         try {
 
             $urlStories = URL_STORIES . "{$id}/comics?". http_build_query($this->query);
