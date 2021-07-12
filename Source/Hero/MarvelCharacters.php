@@ -9,22 +9,23 @@ class MarvelCharacters {
     
     private $query = array(
         // "name" => 'ajak',
-        "limit" => "30",
+        "limit" => "80",
         'apikey' => APIKEY_PUBLIC,
         'ts' => TIMESTAMP,
         'hash' => MD5_HASH,
+        // 'size' => 'portrait_incredible.jpg',
     );
 
 
     
     public function getSomeCharacters() 
     {
-        try {
+        $urlComics  = URL_CHARACTERS . http_build_query($this->query);
 
-            $url  = URL_CHARACTERS . http_build_query($this->query);
-            
+
+        try {            
             $curl = new Curl;
-            $this->data = $curl->initCurl($url);
+            $this->data = $curl->initCurl($urlComics);
            
         } catch(Exception $error) {
           throw new Error($error->getMessage());
@@ -34,12 +35,24 @@ class MarvelCharacters {
 
     public function getFilterOneStories(int $id) 
     {
+       
+      
+        // 12211/characters
         try {
 
-        } catch(Exception $error) {
+            $urlStories = URL_STORIES . "{$id}/comics?". http_build_query($this->query);
 
+            if (!empty($id)) {
+                $curl = new Curl;
+                $this->data = $curl->initCurl($urlStories);
+            }
+           
+
+        } catch(Exception $error) {
+          throw new Error($error->getMessage());
         }
 
+        return $this->data;
     }
 
 }

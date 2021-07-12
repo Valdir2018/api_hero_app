@@ -21,8 +21,9 @@ class Curl {
             curl_exec($curl);
         
             $this->result = json_decode(curl_exec($curl), true);
-            echo json_encode($this->result);
             curl_close($curl);
+            echo json_encode($this->result);
+
         }
     }
 }

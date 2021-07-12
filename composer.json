@@ -1,0 +1,34 @@
+{
+    "name": "valdir2018/api_hero_app",
+    "description": "consumindo api com php",
+    "minimum-stasbility": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "valdir",
+            "email": "valdirpiresba@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor_dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/",
+            "Config\\": "config/"
+        },
+        "files": [
+           "config/Config.php"
+        ],
+
+        "require": {}
+    },
+
+    "scripts": {
+        "test": "vendor\\bin\\phpunit"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
